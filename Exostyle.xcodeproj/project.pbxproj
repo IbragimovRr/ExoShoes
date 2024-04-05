@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4408EB0F2BC06AFA002A1EAE /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408EB0E2BC06AFA002A1EAE /* CartTableViewCell.swift */; };
+		4408EB112BC07536002A1EAE /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408EB102BC07536002A1EAE /* PayViewController.swift */; };
+		4408EB132BC08003002A1EAE /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408EB122BC08002002A1EAE /* LogoViewController.swift */; };
+		4408EB162BC0842A002A1EAE /* Tovars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408EB152BC0842A002A1EAE /* Tovars.swift */; };
+		443880352BC0955F00076F86 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 443880342BC0955F00076F86 /* Realm */; };
+		443880372BC0955F00076F86 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 443880362BC0955F00076F86 /* RealmSwift */; };
+		443880392BC0963D00076F86 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443880382BC0963D00076F86 /* Realm.swift */; };
+		4438803B2BC09BBA00076F86 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4438803A2BC09BBA00076F86 /* OrderViewController.swift */; };
+		4438803D2BC09C8B00076F86 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4438803C2BC09C8B00076F86 /* OrderTableViewCell.swift */; };
 		7536A76A2BBC4EB9005861D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536A7692BBC4EB9005861D1 /* AppDelegate.swift */; };
 		7536A76C2BBC4EB9005861D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536A76B2BBC4EB9005861D1 /* SceneDelegate.swift */; };
-		7536A76E2BBC4EB9005861D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536A76D2BBC4EB9005861D1 /* ViewController.swift */; };
+		7536A76E2BBC4EB9005861D1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536A76D2BBC4EB9005861D1 /* MainViewController.swift */; };
 		7536A7712BBC4EB9005861D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7536A76F2BBC4EB9005861D1 /* Main.storyboard */; };
 		7536A7742BBC4EB9005861D1 /* Exostyle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7536A7722BBC4EB9005861D1 /* Exostyle.xcdatamodeld */; };
 		7536A7762BBC4EC5005861D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7536A7752BBC4EC5005861D1 /* Assets.xcassets */; };
@@ -17,6 +26,14 @@
 		7536A7842BBC4EC6005861D1 /* ExostyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536A7832BBC4EC6005861D1 /* ExostyleTests.swift */; };
 		7536A78E2BBC4EC6005861D1 /* ExostyleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536A78D2BBC4EC6005861D1 /* ExostyleUITests.swift */; };
 		7536A7902BBC4EC6005861D1 /* ExostyleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536A78F2BBC4EC6005861D1 /* ExostyleUITestsLaunchTests.swift */; };
+		7536A7A02BC00313005861D1 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536A79F2BC00313005861D1 /* Gradient.swift */; };
+		7536A7A32BC005DF005861D1 /* mr_NorwesterG.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7536A7A22BC005DF005861D1 /* mr_NorwesterG.otf */; };
+		7536A7A52BC00B9C005861D1 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536A7A42BC00B9C005861D1 /* CartViewController.swift */; };
+		7536A7A82BC00E18005861D1 /* RecomendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536A7A72BC00E18005861D1 /* RecomendCollectionViewCell.swift */; };
+		7536A7AA2BC0114C005861D1 /* TovarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536A7A92BC0114C005861D1 /* TovarTableViewCell.swift */; };
+		7536A7AC2BC016C7005861D1 /* SizeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536A7AB2BC016C7005861D1 /* SizeCollectionViewCell.swift */; };
+		7536A7AE2BC01720005861D1 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536A7AD2BC01720005861D1 /* ImageCollectionViewCell.swift */; };
+		7536A7B02BC01AF8005861D1 /* TovarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536A7AF2BC01AF8005861D1 /* TovarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +54,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4408EB0E2BC06AFA002A1EAE /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		4408EB102BC07536002A1EAE /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		4408EB122BC08002002A1EAE /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
+		4408EB152BC0842A002A1EAE /* Tovars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tovars.swift; sourceTree = "<group>"; };
+		443880382BC0963D00076F86 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		4438803A2BC09BBA00076F86 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		4438803C2BC09C8B00076F86 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		7536A7662BBC4EB9005861D1 /* Exostyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exostyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7536A7692BBC4EB9005861D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7536A76B2BBC4EB9005861D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7536A76D2BBC4EB9005861D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7536A76D2BBC4EB9005861D1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7536A7702BBC4EB9005861D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7536A7732BBC4EB9005861D1 /* Exostyle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Exostyle.xcdatamodel; sourceTree = "<group>"; };
 		7536A7752BBC4EC5005861D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +75,14 @@
 		7536A7892BBC4EC6005861D1 /* ExostyleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExostyleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7536A78D2BBC4EC6005861D1 /* ExostyleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExostyleUITests.swift; sourceTree = "<group>"; };
 		7536A78F2BBC4EC6005861D1 /* ExostyleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExostyleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7536A79F2BC00313005861D1 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		7536A7A22BC005DF005861D1 /* mr_NorwesterG.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mr_NorwesterG.otf; sourceTree = "<group>"; };
+		7536A7A42BC00B9C005861D1 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		7536A7A72BC00E18005861D1 /* RecomendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendCollectionViewCell.swift; sourceTree = "<group>"; };
+		7536A7A92BC0114C005861D1 /* TovarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TovarTableViewCell.swift; sourceTree = "<group>"; };
+		7536A7AB2BC016C7005861D1 /* SizeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCollectionViewCell.swift; sourceTree = "<group>"; };
+		7536A7AD2BC01720005861D1 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		7536A7AF2BC01AF8005861D1 /* TovarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TovarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443880372BC0955F00076F86 /* RealmSwift in Frameworks */,
+				443880352BC0955F00076F86 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,14 +135,18 @@
 		7536A7682BBC4EB9005861D1 /* Exostyle */ = {
 			isa = PBXGroup;
 			children = (
-				7536A7692BBC4EB9005861D1 /* AppDelegate.swift */,
-				7536A76B2BBC4EB9005861D1 /* SceneDelegate.swift */,
-				7536A76D2BBC4EB9005861D1 /* ViewController.swift */,
+				7536A79C2BC002D8005861D1 /* Module */,
+				7536A79D2BC002E2005861D1 /* Views */,
+				7536A79E2BC002EE005861D1 /* Controllers */,
 				7536A76F2BBC4EB9005861D1 /* Main.storyboard */,
-				7536A7752BBC4EC5005861D1 /* Assets.xcassets */,
 				7536A7772BBC4EC5005861D1 /* LaunchScreen.storyboard */,
-				7536A77A2BBC4EC6005861D1 /* Info.plist */,
+				7536A76B2BBC4EB9005861D1 /* SceneDelegate.swift */,
+				7536A7692BBC4EB9005861D1 /* AppDelegate.swift */,
+				7536A7752BBC4EC5005861D1 /* Assets.xcassets */,
 				7536A7722BBC4EB9005861D1 /* Exostyle.xcdatamodeld */,
+				7536A77A2BBC4EC6005861D1 /* Info.plist */,
+				7536A7A62BC00DF6005861D1 /* CollectionViewCell */,
+				7536A7A12BC005BD005861D1 /* Fonts */,
 			);
 			path = Exostyle;
 			sourceTree = "<group>";
@@ -130,6 +168,57 @@
 			path = ExostyleUITests;
 			sourceTree = "<group>";
 		};
+		7536A79C2BC002D8005861D1 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				4408EB152BC0842A002A1EAE /* Tovars.swift */,
+				443880382BC0963D00076F86 /* Realm.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		7536A79D2BC002E2005861D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7536A79F2BC00313005861D1 /* Gradient.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7536A79E2BC002EE005861D1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7536A76D2BBC4EB9005861D1 /* MainViewController.swift */,
+				7536A7A42BC00B9C005861D1 /* CartViewController.swift */,
+				7536A7AF2BC01AF8005861D1 /* TovarViewController.swift */,
+				4408EB102BC07536002A1EAE /* PayViewController.swift */,
+				4408EB122BC08002002A1EAE /* LogoViewController.swift */,
+				4438803A2BC09BBA00076F86 /* OrderViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7536A7A12BC005BD005861D1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7536A7A22BC005DF005861D1 /* mr_NorwesterG.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7536A7A62BC00DF6005861D1 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7536A7A72BC00E18005861D1 /* RecomendCollectionViewCell.swift */,
+				7536A7A92BC0114C005861D1 /* TovarTableViewCell.swift */,
+				7536A7AB2BC016C7005861D1 /* SizeCollectionViewCell.swift */,
+				7536A7AD2BC01720005861D1 /* ImageCollectionViewCell.swift */,
+				4408EB0E2BC06AFA002A1EAE /* CartTableViewCell.swift */,
+				4438803C2BC09C8B00076F86 /* OrderTableViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +235,10 @@
 			dependencies = (
 			);
 			name = Exostyle;
+			packageProductDependencies = (
+				443880342BC0955F00076F86 /* Realm */,
+				443880362BC0955F00076F86 /* RealmSwift */,
+			);
 			productName = Exostyle;
 			productReference = 7536A7662BBC4EB9005861D1 /* Exostyle.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +311,9 @@
 				Base,
 			);
 			mainGroup = 7536A75D2BBC4EB9005861D1;
+			packageReferences = (
+				443880332BC0955F00076F86 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 7536A7672BBC4EB9005861D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,6 +332,7 @@
 			files = (
 				7536A7792BBC4EC5005861D1 /* LaunchScreen.storyboard in Resources */,
 				7536A7762BBC4EC5005861D1 /* Assets.xcassets in Resources */,
+				7536A7A32BC005DF005861D1 /* mr_NorwesterG.otf in Resources */,
 				7536A7712BBC4EB9005861D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,9 +358,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7536A76E2BBC4EB9005861D1 /* ViewController.swift in Sources */,
+				7536A7A02BC00313005861D1 /* Gradient.swift in Sources */,
+				4408EB112BC07536002A1EAE /* PayViewController.swift in Sources */,
+				7536A76E2BBC4EB9005861D1 /* MainViewController.swift in Sources */,
+				4408EB132BC08003002A1EAE /* LogoViewController.swift in Sources */,
+				7536A7AA2BC0114C005861D1 /* TovarTableViewCell.swift in Sources */,
+				4408EB0F2BC06AFA002A1EAE /* CartTableViewCell.swift in Sources */,
+				4438803D2BC09C8B00076F86 /* OrderTableViewCell.swift in Sources */,
+				7536A7B02BC01AF8005861D1 /* TovarViewController.swift in Sources */,
+				443880392BC0963D00076F86 /* Realm.swift in Sources */,
+				4438803B2BC09BBA00076F86 /* OrderViewController.swift in Sources */,
 				7536A76A2BBC4EB9005861D1 /* AppDelegate.swift in Sources */,
+				7536A7A82BC00E18005861D1 /* RecomendCollectionViewCell.swift in Sources */,
 				7536A7742BBC4EB9005861D1 /* Exostyle.xcdatamodeld in Sources */,
+				4408EB162BC0842A002A1EAE /* Tovars.swift in Sources */,
+				7536A7AE2BC01720005861D1 /* ImageCollectionViewCell.swift in Sources */,
+				7536A7AC2BC016C7005861D1 /* SizeCollectionViewCell.swift in Sources */,
+				7536A7A52BC00B9C005861D1 /* CartViewController.swift in Sources */,
 				7536A76C2BBC4EB9005861D1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,7 +535,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -446,8 +557,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,8 +583,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -600,6 +709,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		443880332BC0955F00076F86 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift?ysclid=lieqhvob3n333672226";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		443880342BC0955F00076F86 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 443880332BC0955F00076F86 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		443880362BC0955F00076F86 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 443880332BC0955F00076F86 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		7536A7722BBC4EB9005861D1 /* Exostyle.xcdatamodeld */ = {
