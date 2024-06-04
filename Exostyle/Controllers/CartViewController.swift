@@ -39,6 +39,8 @@ class CartViewController: UIViewController {
     
     @IBAction func pay(_ sender: UIButton) {
         guard array.count != 0 else {return}
+        array.removeAll()
+        RealmSelf().removeBag()
         performSegue(withIdentifier: "afterPay", sender: self)
     }
     
@@ -55,6 +57,7 @@ class CartViewController: UIViewController {
 
 }
 extension CartViewController: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return array.count
     }

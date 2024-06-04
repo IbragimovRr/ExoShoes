@@ -12,6 +12,12 @@ import RealmSwift
 
 class RealmSelf {
     
+    func removeBag() {
+        let realm = try! Realm()
+        let result = realm.objects(TovarsRealm.self)
+        realm.delete(result)
+    }
+    
     func saveToBag(tovar:Tovar,size:String?) {
         let realm = try! Realm()
         let bagRealm = TovarsRealm()
