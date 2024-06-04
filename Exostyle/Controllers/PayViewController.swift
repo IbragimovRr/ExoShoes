@@ -11,11 +11,17 @@ class PayViewController: UIViewController {
 
     @IBOutlet weak var lbl: UILabel!
     
+    var orderNumber = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let random = Int.random(in: 1000000...9999999)
-        lbl.text = "\(random)"
-        RealmSelf().saveToOrder(number: "\(random)")
+        if orderNumber == "" {
+            let random = Int.random(in: 1000000...9999999)
+            lbl.text = "\(random)"
+            RealmSelf().saveToOrder(number: "\(random)")
+        }else {
+            lbl.text = orderNumber
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,7 +45,8 @@ class PayViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     @IBAction func instagramBtn(_ sender: UIButton) {
-        
+        let url = URL(string: "https://www.instagram.com/exo.mhk?igsh=MWFsdW5mMmhtbndtbA==")!
+        UIApplication.shared.open(url)
     }
     
 }

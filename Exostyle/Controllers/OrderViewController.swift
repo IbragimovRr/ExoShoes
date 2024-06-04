@@ -11,6 +11,7 @@ class OrderViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     private var array = [Order]()
+    var orderNumber = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,20 @@ extension OrderViewController: UITableViewDelegate,UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "order", for: indexPath) as! OrderTableViewCell
         cell.number.text = array[indexPath.row].number
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        orderNumber = array[indexPath.row].number
+        performSegue(withIdentifier: "goOrder", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goOrder" {
+            let vc = segue.destination as! PayViewController
+            vc.orderNumber = orderNumber
+        }
+        
     }
     
     

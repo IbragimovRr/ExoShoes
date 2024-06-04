@@ -38,6 +38,7 @@ class CartViewController: UIViewController {
     }
     
     @IBAction func pay(_ sender: UIButton) {
+        guard array.count != 0 else {return}
         performSegue(withIdentifier: "afterPay", sender: self)
     }
     

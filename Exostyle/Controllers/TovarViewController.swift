@@ -16,7 +16,7 @@ class TovarViewController: UIViewController {
     @IBOutlet weak var heightCollectionView: NSLayoutConstraint!
     private let screen = UIScreen.main.bounds.height / 2
     var tovar: Tovar?
-    var sizeSelected: Int = 0
+    var sizeSelected: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,8 @@ class TovarViewController: UIViewController {
     }
     
     @IBAction func addCart(_ sender: Any) {
-        RealmSelf().saveToBag(tovar: tovar!, size: "\(tovar!.sizes[sizeSelected])")
+        guard let size = sizeSelected else {return}
+        RealmSelf().saveToBag(tovar: tovar!, size: "\(tovar!.sizes[size])")
     }
     
     @IBAction func buy(_ sender: Any) {
@@ -63,9 +64,19 @@ extension TovarViewController: UICollectionViewDelegate,UICollectionViewDataSour
             return cell
         }else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "size", for: indexPath) as! SizeCollectionViewCell
+            if sizeSelected == indexPath.row {
+                cell.contentView.backgroundColor = UIColor.lightGray
+            }else {
+                cell.contentView.backgroundColor = UIColor.gray
+            }
             cell.lbl.text = "\(tovar!.sizes[indexPath.row])"
             return cell
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        sizeSelected = indexPath.row
+        sizeCollectionView.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

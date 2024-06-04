@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rFJ-2T-aC5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rFJ-2T-aC5">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -890,7 +890,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VsR-hZ-uu3">
-                                <rect key="frame" x="85.333333333333329" y="357" width="222.33333333333337" height="66"/>
+                                <rect key="frame" x="85.333333333333329" y="357" width="222.33333333333331" height="66"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXOSHOES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jt0-Gv-iii">
                                         <rect key="frame" x="2" y="0.0" width="220.33333333333334" height="68"/>
@@ -1004,7 +1004,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Куртка" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-ox-wTh">
-                                                    <rect key="frame" x="20.000000000000004" y="29.333333333333329" width="56.333333333333343" height="21.666666666666671"/>
+                                                    <rect key="frame" x="20.000000000000004" y="29.666666666666671" width="56.333333333333343" height="21"/>
                                                     <fontDescription key="fontDescription" name="mr_NorwesterG" family="mr_NorwesterG" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -1052,6 +1052,7 @@
                     <navigationItem key="navigationItem" id="a3a-xC-cbi"/>
                     <connections>
                         <outlet property="tableView" destination="56K-9u-EX5" id="DRf-WZ-FJK"/>
+                        <segue destination="GpP-wc-TfT" kind="show" identifier="goOrder" id="k7D-fs-axE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xp1-G5-qia" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

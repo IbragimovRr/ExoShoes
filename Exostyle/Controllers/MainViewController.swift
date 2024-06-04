@@ -55,10 +55,16 @@ extension MainViewController:UITableViewDelegate, UITableViewDataSource, UIColle
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "recomend", for: indexPath) as! RecomendCollectionViewCell
-        cell.im.image = UIImage(named: recomend[indexPath.row].image)
+        cell.im.image = UIImage(named: tovars[indexPath.row].images[0])
         cell.txt.text = recomend[indexPath.row].name
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedTovar = indexPath.row
+        performSegue(withIdentifier: "tovar", sender: self)
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
