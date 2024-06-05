@@ -41,6 +41,7 @@ class CartViewController: UIViewController {
         guard array.count != 0 else {return}
         array.removeAll()
         RealmSelf().removeBag()
+        tableView.reloadData()
         performSegue(withIdentifier: "afterPay", sender: self)
     }
     

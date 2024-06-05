@@ -15,7 +15,9 @@ class RealmSelf {
     func removeBag() {
         let realm = try! Realm()
         let result = realm.objects(TovarsRealm.self)
-        realm.delete(result)
+        try! realm.write {
+            realm.delete(result)
+        }
     }
     
     func saveToBag(tovar:Tovar,size:String?) {
